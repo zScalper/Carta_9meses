@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiero que seas tu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="card">
+        <h1 class="fade-in">Quiero que seas tú</h1>
+        <div class="slide-in">
+            <p>
+                Querida Valeria, el día de hoy quiero expresarte mediante esta carta lo especial
+                que eres en mi vida y como he descubierto que eres todo lo que quiero en esta vida.
+            </p>
+            <p>
+                Hace un mes aproximadamente, estuvimos pasando por momentos difíciles en nuestra relación, a tal punto
+                que llegué a pensar que lo mejor era separarnos. Sin embargo, después de aceptar errores, reflexionar y
+                darnos esta oportunidad. Te bastó solo un mes para demostrarme que estuve apunto de cometer
+                el error más grande de mi vida, aún sigo sin entender como lo haces, pero me alegra saber que solo tú
+                puedas causar
+                en mí esos sentimientos tan intensos.
+            </p>
+            <p>
+                Al final del día solo somos tú y yo, descubriéndonos, conociéndonos y
+                enamorándonos de todas nuestras versiones, una y otra vez.
+                Solo quiero que todas las noches descanses sabiendo que eres amada por mí y sepas que cada mañana
+                al despertar, mi primer pensamiento eres tú.
+            </p>
+            <p>
+                Prometo amarte y apoyarte en cada paso de tu vida, así como tú lo haces conmigo.
+                Así estemos lejos, enojados o con problemas, jamás dejarás de ser el más grande amor de mi vida.
+                Tú eres la mujer que quiero para toda la vida, la mujer que quiero que sea la
+                madre de mis hijos y la mujer con la que quiero compartir mis días.
+            </p>
+            <p>
+                <strong>Espero que esta carta te haga sonreír tanto como tú me haces sonreír a mí.</strong>
+            </p>
+            <p>
+                <strong>Atentamente: Tu amor, compañero y mejor amigo. (osea yo jeje)</strong>
+            </p>
+        </div>
+        <!-- Contenedor de imágenes -->
+        <div class="image-grid">
+            <img src="images/foto_1.jpeg" alt="Imagen 1" class="thumbnail left" onclick="openModal(this)">
+            <img src="images/foto_2.jpeg" alt="Imagen 2" class="thumbnail right" onclick="openModal(this)">
+            <img src="images/foto_3.jpeg" alt="Imagen central" class="thumbnail img-mediana center" onclick="openModal(this)">
+            <img src="images/foto_4.jpeg" alt="Imagen 4" class="thumbnail left" onclick="openModal(this)">
+            <img src="images/foto_5.jpeg" alt="Imagen 5" class="thumbnail right" onclick="openModal(this)">
+        </div>
+
+    </div>
+    <!-- Modal para ver la imagen en pantalla completa -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="fullImage">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
